@@ -1,5 +1,3 @@
-<html>
-<head> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-   <style>
+    <style>
         body {
             font-family: "Lato", sans-serif;
             margin: 0;
@@ -51,16 +49,14 @@
             background-color: #555;
         }
 
-            font-family: "Lato", sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            min-height: 100vh; /* Ensure body covers full viewport */
-            display: flex;
-            flex-direction: column;
-        }
-
-
+        font-family: "Lato", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        min-height: 100vh; /* Ensure body covers full viewport */
+        display: flex;
+        flex-direction: column;
+        
         /* Table Styling */
         table {
             width: 100%;
@@ -76,6 +72,44 @@
         img {
             width: 100px; 
             height: auto;
+        }
+
+        /* Social Media Links Styling */
+        .social-media-links {
+            text-align: center;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center; /* Center the icons horizontally */
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+        }
+
+        .social-icon {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
         }
     </style>
 </head>
@@ -122,102 +156,31 @@
     }
 </script>
 
-</body>
-</html>
-   
-    <title>Follow Us</title>
+<!-- Follow Us Section -->
+<div class="container">
+    <h2>Follow Me on Social Media!</h2>
 
-    <style>
-       
-        {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            text-align: center;
-            color: #333;
-        }
-
-        .social-media-links {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .social-icons a {
-            margin: 0 15px;
-            display: inline-block;
-            transition: transform 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            transform: scale(1.1);
-        }
-
-        .social-icon {
-            width: 80px;
-            height: 80px;
-            object-fit: contain;
-        }
-
-        .social-icons {
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-
-
-    <div class="container">
-        <!-- Heading Section -->
-<p>
-        <h2>Follow Me on Social Media!</h2>
-
-        <!-- Social Media Links Section -->
-        <div class="social-media-links">
-            <div class="social-icons">
-                <a href="https://www.tiktok.com/@captenad?_t=8sGIJZhtDV4&_r=1" target="_blank">
-                    <img src="tiktok.jpeg" alt="TikTok" class="social-icon">
-                </a>
-                <a href="https://www.instagram.com/invites/contact/?igsh=1dylmvcodwbdw&utm_content=353zqe3" target="_blank">
-                    <img src="instagram.png" alt="Instagram" class="social-icon">
-                </a>
- 
-            </div>
+    <div class="social-media-links">
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@captenad?_t=8sGIJZhtDV4&_r=1" target="_blank">
+                <img src="tiktok.jpeg" alt="TikTok" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/invites/contact/?igsh=1dylmvcodwbdw&utm_content=353zqe3" target="_blank">
+                <img src="instagram.png" alt="Instagram" class="social-icon">
+            </a>
         </div>
     </div>
-</p>
-<p>
+</div>
 
-
-
+<!-- Background Image Style -->
 <style> 
-body {
-background-image: url('contact bck.jpg');
-background-size: cover;
-margin: 30;
-height: 130vh;  
-}
+    body {
+        background-image: url('contact bck.jpg');
+        background-size: cover;
+        margin: 30;
+        height: 130vh;  
+    }
 </style>
-
-
 
 </body>
 </html>
