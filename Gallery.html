@@ -46,20 +46,6 @@
             background-color: #555;
         }
 
-            font-family: "Lato", sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            min-height: 100vh; /* Ensure body covers full viewport */
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* Navbar Styling */
-        .w3-top {
-            z-index: 100;
-        }
-
         /* Gallery Section Styling */
         .gallery {
             display: flex;
@@ -96,7 +82,6 @@
             transform: scale(1.1);
         }
 
-        /* Media Section Styling for Video and Audio */
         .media-section {
             width: 50%;
             max-width: 1500px; /* Matches navbar width */
@@ -129,7 +114,6 @@
             margin-bottom: 15px;
         }
 
-        /* Responsive Design */
         @media (max-width: 768px) {
             .gallery-item {
                 width: 220px;
@@ -170,18 +154,26 @@
       </div>
     </div>
   </div>
+
+  <!-- Mobile Menu -->
+  <div id="myMenu" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+    <a href="Travelling.html" class="w3-bar-item w3-button">TRAVELLING</a>
+    <a href="Gallery.html" class="w3-bar-item w3-button">GALLERY</a>
+    <a href="Contact.html" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="hobby.html" class="w3-bar-item w3-button">HOBBY</a>
+  </div>
 </div>
 
 <!-- Audio Section -->
 <div class="media-section">
     <div class="media-item">
-        <img src="perayaan mati rasa gambar.jpg" alt="Audio Image" class="audio-image"> <!-- Picture for audio -->
+        <img src="perayaan mati rasa gambar.jpg" alt="Audio Image" class="audio-image">
         <audio controls>
             <source src="perayaan mati rasa.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
     </div>
-</div> <!-- Closing media-section for audio -->
+</div>
 
 <!-- Gallery Section -->
 <div class="gallery">
@@ -203,7 +195,7 @@
     <div class="gallery-item">
         <img src="gallery6.jpg" alt="Image 6">
     </div>
-</div> <!-- Closing gallery section here -->
+</div>
 
 <!-- Video Section -->
 <div class="media-section">
@@ -214,7 +206,19 @@
             Your browser does not support the video tag.
         </video>
     </div>
-</div> <!-- Closing media-section for video -->
+</div>
+
+<script>
+    // Function to toggle the mobile menu
+    function myFunction() {
+        var x = document.getElementById("myMenu");
+        if (x.classList.contains("w3-show")) {
+            x.classList.remove("w3-show");
+        } else {
+            x.classList.add("w3-show");
+        }
+    }
+</script>
 
 </body>
 </html>
