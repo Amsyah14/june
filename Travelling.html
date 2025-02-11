@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
     <title>Travelling</title>
-    <link rel="shortcut icon" type="image/png" href="boy.png"> 
+    <link rel="shortcut icon" type="image/png" href="boy.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     <style>
         /* General Body Style */
         body {
-
             font-family: "Lato", sans-serif;
             margin: 0;
             padding: 0;
@@ -50,14 +49,9 @@
             background-color: #555;
         }
 
-            font-family: "Lato", sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
         /* Table Styling */
         table {
-            width: 150%;
+            width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
         }
@@ -104,10 +98,19 @@
         }
 
         /* Responsive Fixes */
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 768px) {
             table, th, td {
                 display: block;
                 width: 100%;
+            }
+            th, td {
+                text-align: left;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            img {
+                max-width: 100%;
             }
         }
     </style>
@@ -117,6 +120,7 @@
 <!-- Navbar -->
 <div class="w3-top">
     <div class="w3-bar w3-black w3-card">
+        <!-- Hamburger menu button for small screens -->
         <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
             <i class="fa fa-bars"></i>
         </a>
@@ -125,7 +129,7 @@
         <a href="Gallery.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GALLERY</a>
         <a href="Contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
         <div class="w3-dropdown-hover w3-hide-small">
-            <button class="w3-padding-large w3-button" title="Hobby">HOBBY <i class="fa fa-caret-down"></i></button>     
+            <button class="w3-padding-large w3-button" title="Hobby">HOBBY <i class="fa fa-caret-down"></i></button>
             <div class="w3-dropdown-content w3-bar-block w3-card-4">
                 <a href="hobby.html" class="w3-bar-item w3-button">Collecting Figure</a>
             </div>
@@ -169,15 +173,15 @@
 </div>
 
 <script>
-    // Function to toggle the mobile menu
-    function myFunction() {
-        var x = document.getElementById("myMenu");
-        if (x.classList.contains("w3-show")) {
-            x.classList.remove("w3-show");
-        } else {
-            x.classList.add("w3-show");
-        }
+// Function to toggle the mobile menu
+function myFunction() {
+    var x = document.getElementById("myMenu");
+    if (x.classList.contains("w3-show")) {
+        x.classList.remove("w3-show");
+    } else {
+        x.classList.add("w3-show");
     }
+}
 </script>
 
 </body>
